@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- link to external css file -->
+    <link rel="stylesheet" href="index.css">
+    <title>profile builder localstorage powered</title>
+</head>
+<body>
+
+<div class="container">
+
+    <!-- profile display heading -->
+    <h1>here your saved profile</h1>
+
+    <!-- section to show saved user profile -->
+    <div class="profile_section">
+        <h3>name: selina islam</h3>
+        <p>age: 21</p>
+        <p>profession: web developer</p>
+    </div>
+
+    <!-- form to input user profile data -->
+    <form class="profile_form">
+
+        <!-- input field for name -->
+        <div class="profileForm_section">
+            <label for="name">name:</label>
+            <input type="text" id="name"/>
+        </div>
+
+        <!-- input field for age -->
+        <div class="profileForm_section">
+            <label for="age">age:</label>
+            <input type="text" id="age"/>
+        </div>
+
+        <!-- input field for profession -->
+        <div class="profileForm_section">
+            <label for="profession">profession:</label>
+            <input type="text" id="profession"/>
+        </div>
+
+        <!-- button to submit the form -->
+        <button class="submit" type="submit">submit</button>
+    </form>
+
+    <!-- button to clear saved profile -->
+    <button onclick="clearProfile()">clear profile</button>
+
+</div> <!-- end of container -->
+
+<!-- link to external javascript file -->
+<script src="LocalStorageExplained.js"></script>
+</body>
+</html>
